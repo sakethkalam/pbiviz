@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core/pbiviz.json",
+  "visual": {
+    "name": "MBRCommentVisual",
+    "displayName": "MBR Monthly Entry Form",
+    "guid": "MBRCommentVisual1A2B3C4D5E6F",
+    "visualClassName": "MBRCommentVisual",
+    "version": "1.0.0.0",
+    "description": "MBR monthly data entry form with free-text comment capture and Fabric UDF writeback",
+    "supportUrl": "https://www.terumo.com",
+    "gitHubUrl": ""
+  },
+  "author": {
+    "name": "Terumo Aortic",
+    "email": "saketh.kalam@terumo.com"
+  },
+  "apiVersion": "5.11.0",
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "stringResources": [],
+  "content": {
+    "js": "dist/visual.js",
+    "css": "dist/visual.css",
+    "iconBase64": ""
+  }
+}

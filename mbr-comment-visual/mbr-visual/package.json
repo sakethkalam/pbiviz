@@ -1,0 +1,16 @@
+{
+  "name": "mbr-comment-visual",
+  "description": "MBR Monthly Data Entry Visual with free-text comment capture",
+  "version": "1.0.0",
+  "scripts": {
+    "pbiviz": "pbiviz",
+    "start": "pbiviz start",
+    "package": "pbiviz package",
+    "build": "pbiviz package --no-minify"
+  },
+  "devDependencies": {
+    "powerbi-visuals-api": "~5.11.0",
+    "powerbi-visuals-tools": "^4.0.0",
+    "typescript": "^4.9.0"
+  }
+}

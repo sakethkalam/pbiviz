@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "ES6",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "types": ["powerbi-visuals-api"],
+    "lib": ["ES6", "dom"],
+    "strict": false
+  },
+  "files": [
+    "src/visual.ts"
+  ]
+}

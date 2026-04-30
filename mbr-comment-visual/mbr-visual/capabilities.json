@@ -1,0 +1,78 @@
+{
+  "dataRoles": [
+    {
+      "name": "idn",
+      "kind": "GroupingOrMeasure",
+      "displayName": "IDN"
+    },
+    {
+      "name": "billTo",
+      "kind": "GroupingOrMeasure",
+      "displayName": "Bill To"
+    },
+    {
+      "name": "fiscalYear",
+      "kind": "GroupingOrMeasure",
+      "displayName": "Fiscal Year"
+    },
+    {
+      "name": "month",
+      "kind": "GroupingOrMeasure",
+      "displayName": "Month"
+    },
+    {
+      "name": "submittedBy",
+      "kind": "GroupingOrMeasure",
+      "displayName": "Submitted By (UPN)"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "categorical": {
+        "categories": {
+          "select": [
+            { "bind": { "to": "idn" } },
+            { "bind": { "to": "billTo" } },
+            { "bind": { "to": "fiscalYear" } },
+            { "bind": { "to": "month" } },
+            { "bind": { "to": "submittedBy" } }
+          ]
+        }
+      }
+    }
+  ],
+  "objects": {
+    "commentBoxSettings": {
+      "displayName": "Comment Box",
+      "properties": {
+        "backgroundColor": {
+          "displayName": "Background Color",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "borderColor": {
+          "displayName": "Border Color",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "fontColor": {
+          "displayName": "Font Color",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "fontSize": {
+          "displayName": "Font Size",
+          "type": { "numeric": true }
+        },
+        "fontFamily": {
+          "displayName": "Font Family",
+          "type": { "text": true }
+        }
+      }
+    }
+  },
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": true,
+      "parameters": ["https://api.fabric.microsoft.com"]
+    }
+  ]
+}
